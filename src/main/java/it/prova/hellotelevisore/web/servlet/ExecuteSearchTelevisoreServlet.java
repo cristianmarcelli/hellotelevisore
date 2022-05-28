@@ -19,10 +19,10 @@ public class ExecuteSearchTelevisoreServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		String marcaInput = request.getParameter("marcaInput");
-		String modelloInput = request.getParameter("modelloInputId");
+		String modelloInput = request.getParameter("modelloInput");
 
 		request.setAttribute("listaTelevisoriAttributeName",
-				MyServiceFactory.getAbitanteServiceInstance().cercaPerMarcaEModello(marcaInput, modelloInput));
+				MyServiceFactory.getTelevisoreServiceInstance().cercaPerMarcaEModello(marcaInput, modelloInput));
 
 		RequestDispatcher rd = request.getRequestDispatcher("results.jsp");
 

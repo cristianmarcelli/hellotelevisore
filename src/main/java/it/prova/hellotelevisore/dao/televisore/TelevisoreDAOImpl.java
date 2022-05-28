@@ -22,7 +22,7 @@ public class TelevisoreDAOImpl implements TelevisoreDAO {
 		List<Televisore> listaTelevisoriDaRicerca = new ArrayList<Televisore>();
 		
 		for (Televisore televisoreItem : DB_Mock.LISTA_TELEVISORI) {
-			if(televisoreItem.getMarca().startsWith("marca") && televisoreItem.getModello().startsWith(modello)) {
+			if(televisoreItem.getMarca().startsWith(marca) && televisoreItem.getModello().startsWith(modello)) {
 				listaTelevisoriDaRicerca.add(televisoreItem);
 			}
 		}

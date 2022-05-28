@@ -8,7 +8,7 @@ public class MyServiceFactory {
 	// rendiamo questo factory SINGLETON
 	private static TelevisoreService TELEVISORE_SERVICE_INSTANCE;
 
-	public static TelevisoreService getAbitanteServiceInstance() {
+	public static TelevisoreService getTelevisoreServiceInstance() {
 		if (TELEVISORE_SERVICE_INSTANCE == null)
 			TELEVISORE_SERVICE_INSTANCE = new TelevisoreServiceImpl();
 
