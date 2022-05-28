@@ -1,6 +1,8 @@
 package it.prova.hellotelevisore.web.servlet;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,14 +15,11 @@ public class PrepareInsertTelevisoreServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("prova prepareInsert").append(request.getContextPath());
-	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		RequestDispatcher rd = request.getRequestDispatcher("insert.jsp");
+		
+		rd.forward(request, response);
+		
 	}
 
 }

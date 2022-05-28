@@ -10,8 +10,9 @@
 	<% if(request.getAttribute("messaggioDiErrore") != null){ %>
 		<p style="color: red;"><%=request.getAttribute("messaggioDiErrore") %></p>
 	<%  }else{ %>
-		Inserire dati da ricercare<br>
+		<h3>Cerca un televisore tramite marca e modello</h3>
 	<%}    %>
+	
 	<form action="ExecuteSearchTelevisoreServlet" method="post">
 		<label for="marcaInputId">MARCA:</label><br>
 		<input type="text" name="marcaInput" id="marcaInputId">
