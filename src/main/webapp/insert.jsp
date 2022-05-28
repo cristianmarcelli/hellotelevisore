@@ -8,7 +8,6 @@
 </head>
 <body>
 
-
 	<h3>Inserisci le specifiche del nuovo televisore</h3>
 	<form action="ExecuteInsertTelevisoreServlet" method="post">
 		<label for="marcaInputId">MARCA:</label><br>
