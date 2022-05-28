@@ -52,6 +52,16 @@ public class TelevisoreDAOImpl implements TelevisoreDAO {
 	@Override
 	public int update(Televisore televisoreInput) throws Exception {
 		
+		for (Televisore televisoreItem : DB_Mock.LISTA_TELEVISORI) {
+			if(televisoreItem.getIdTelevisore() == televisoreInput.getIdTelevisore()) {
+				televisoreInput.setMarca(televisoreItem.getMarca());
+				televisoreInput.setModello(televisoreItem.getModello());
+				televisoreInput.setPrezzo(televisoreItem.getPrezzo());
+				televisoreInput.setNumeroPollici(televisoreItem.getNumeroPollici());
+				televisoreInput.setCodice(televisoreItem.getCodice());
+				return 1;
+			}
+		}
 		return 0;
 	}
 
