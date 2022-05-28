@@ -41,7 +41,7 @@
 					<td><%=televisoreItem.getModello() %></td>
 					<td>
 						<a href="ExecuteShowTelevisoreServlet?idDaInviareComeParametro=<%=televisoreItem.getIdTelevisore() %>">Dettaglio</a>
-						<a href="PreparaUpdateTelevisoreServlet?idDaInviareComeParametro=<%=televisoreItem.getIdTelevisore() %>">Modifica</a>
+						<a href="PrepareUpdateTelevisoreServlet?idDaInviareComeParametro=<%=televisoreItem.getIdTelevisore() %>">Modifica</a>
 						<a href="PrepareDeleteTelevisoreServlet?idDaInviareComeParametro=<%=televisoreItem.getIdTelevisore() %>">Elimina</a>
 					</td>
 				</tr>
@@ -49,7 +49,8 @@
 	
 	</table>
 	
-		<a href="PrepareInsertTelevisoreServlet">Inserisci nuovo</a>
+		<a href="PrepareInsertTelevisoreServlet">Inserisci nuovo</a><br><br>
+		<a href="searchForm.jsp">Torna alla home</a>
 
 </body>
 </html>
