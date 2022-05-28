@@ -12,7 +12,7 @@
 	<% Televisore televisoreDaModificare = (Televisore) request.getAttribute("televisoreDaInviareAPaginaEdit"); %>
 	
 		<h3>Inserisci le specifiche da modificare</h3>
-		<form action="ExecuteInsertTelevisoreServlet" method="post">
+		<form action="ExecuteUpdateTelevisoreServlet" method="post">
 			<input type="hidden" name="idTelevisore" value="<%=televisoreDaModificare.getIdTelevisore()%>">
 			<label for="marcaInputId">MARCA:</label><br>
 			<input type="text" name="marcaInput" id="marcaInputId">
