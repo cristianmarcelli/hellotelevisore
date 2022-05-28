@@ -26,7 +26,7 @@
 		<input type="text" name="codiceInput" id="codiceInputId">
 		<br>
 		<br>
-		<input type="submit" value="CONFERMA">
+		<input type="submit" value="Conferma">
 	</form>
 	
 	<br><a href="searchForm.jsp">Torna alla home</a>
